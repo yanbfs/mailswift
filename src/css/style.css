@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,33 +16,33 @@ body{
     background: linear-gradient(0deg, rgba(60,224,151,1) 0%, rgba(42,220,160,1) 39%, rgba(233,235,112,1) 100%); */
 }
 
-.wrapper{
-    width: 600px; /*largura do box*/
+.wrapper {
+    width: 75%; /*largura do box*/
     height: 65vh; /*largura do box*/
     background: rgba(255, 255, 255, .1); /*cor da box*/
     /* border: 1px solid rgba(255, 255, 255, .3); */
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
     -webkit-backdrop-filter: blur(20px);
     color: #fff; /*cor da fonte do box*/
     border-radius: 20px;/*bordas dao box*/
-    padding: 30px 40px;
+    padding: 3vh 4vw; /* alterado para unidades relativas */
 }
 
-.wrapper h1{
-    font-size: 36px; /*tramanho da fonte do titulo*/
+.wrapper h1 {
+    font-size: 3vh; /*tramanho da fonte do titulo*/
     text-align: center; /*Centraliza o texto no centro da box*/
 }
 
-.wrapper .input-box{
+.wrapper .input-box {
     position: relative;
     width: 100%; /*largura da div do input*/
-    height: 50px; /*altura da div do input*/
+    height: 5vh; /*altura da div do input*/
     /* background: salmon; cor da div de input */
-    margin: 30px 0;
+    margin: 3vh 0; /* alterado para unidades relativas */
 }
 
-.input-box input, textarea{
+.input-box input, .input-box textarea {
     overflow: hidden;
     width: 100%; /*largura do input*/
     height: 100%; /*altura do input*/
@@ -51,55 +51,54 @@ body{
     outline: none;
     border: 2px solid rgba(255,255,255,.2);
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 1.6vh; /* alterado para unidades relativas */
     color: #fff;
-    padding: 20px 45px 20px 20px;
+    padding: 2vh 4vw 2vh 2vw; /* alterado para unidades relativas */
 }
 
-.input-box textarea{
+.input-box textarea {
     height: 25vh;
-    border-radius: 20px;
+    border-radius: 2vh; /* alterado para unidades relativas */
     resize: none;
-    
 }
 
-.input-box input::placeholder{
+.input-box input::placeholder {
     color: #fff; /*muda a cor do placeholder*/
 }
 
-.input-box textarea::placeholder{
+.input-box textarea::placeholder {
     color: #fff; /*muda a cor do placeholder*/
 }
 
-.input-box i{
+.input-box i {
     position: absolute;
-    right: 20px;
+    right: 2vw; /* alterado para unidades relativas */
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px;
+    font-size: 2vh; /* alterado para unidades relativas */
 }
 
-.box-btn{
+.box-btn {
     position: relative;
-    height: 24vh;
+    height: 24vh; /* alterado para unidades relativas */
     /* border: 1px solid red; */
 }
 
-.btn{
+.btn {
     position: absolute;
     bottom: 0;
 }
 
-.wrapper .btn{
+.wrapper .btn {
     width: 100%;
-    height: 45px;
+    height: 5vh; /* alterado para unidades relativas */
     background: #fff;
     border: none;
     outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 4vh; /* alterado para unidades relativas */
+    box-shadow: 0 0 1vh rgba(0, 0, 0, .1); /* alterado para unidades relativas */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.6vh; /* alterado para unidades relativas */
     color: #333;
     font-weight: 600;
 }
@@ -134,7 +133,7 @@ body{
 
 
 .background span:nth-child(0) {
-    color: #E45A84;
+    color: #ca2556;
     top: 78%;
     left: 91%;
     animation-duration: 51s;
@@ -143,7 +142,7 @@ body{
     box-shadow: -34vmin 0 5.171356494429013vmin currentColor;
 }
 .background span:nth-child(1) {
-    color: #FFACAC;
+    color: #E45A84;
     top: 79%;
     left: 33%;
     animation-duration: 45s;
@@ -152,7 +151,7 @@ body{
     box-shadow: 34vmin 0 4.946187030121257vmin currentColor;
 }
 .background span:nth-child(2) {
-    color: #E45A84;
+    color: #FFACAC;
     top: 40%;
     left: 16%;
     animation-duration: 31s;
@@ -161,7 +160,7 @@ body{
     box-shadow: 34vmin 0 5.1869983801802695vmin currentColor;
 }
 .background span:nth-child(3) {
-    color: #FFACAC;
+    color: #c56b6b;
     top: 92%;
     left: 93%;
     animation-duration: 44s;
@@ -179,7 +178,7 @@ body{
     box-shadow: -34vmin 0 4.250866896540479vmin currentColor;
 }
 .background span:nth-child(5) {
-    color: #FFACAC;
+    color: #583C87;
     top: 95%;
     left: 75%;
     animation-duration: 44s;
@@ -206,7 +205,7 @@ body{
     box-shadow: -34vmin 0 4.3148241346713885vmin currentColor;
 }
 .background span:nth-child(8) {
-    color: #583C87;
+    color: #FFACAC;
     top: 61%;
     left: 52%;
     animation-duration: 23s;
@@ -215,7 +214,7 @@ body{
     box-shadow: -34vmin 0 4.701085932840082vmin currentColor;
 }
 .background span:nth-child(9) {
-    color: #583C87;
+    color: #FFACAC;
     top: 6%;
     left: 33%;
     animation-duration: 27s;
