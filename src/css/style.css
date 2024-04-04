@@ -17,71 +17,69 @@ body {
 }
 
 .wrapper {
-    width: 75%; /*largura do box*/
-    height: 65vh; /*largura do box*/
-    background: rgba(255, 255, 255, .1); /*cor da box*/
-    /* border: 1px solid rgba(255, 255, 255, .3); */
+    width: 75%; 
+    height: 65vh; 
+    background: rgba(255, 255, 255, .1); 
+    border: 1px solid rgba(255, 255, 255, .3);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
     -webkit-backdrop-filter: blur(20px);
-    color: #fff; /*cor da fonte do box*/
-    border-radius: 20px;/*bordas dao box*/
-    padding: 3vh 4vw; /* alterado para unidades relativas */
+    color: #fff; 
+    border-radius: 20px;
+    padding: 3vh 4vw; 
 }
 
 .wrapper h1 {
-    font-size: 3vh; /*tramanho da fonte do titulo*/
-    text-align: center; /*Centraliza o texto no centro da box*/
+    font-size: 3vh; 
+    text-align: center; 
 }
 
 .wrapper .input-box {
     position: relative;
-    width: 100%; /*largura da div do input*/
-    height: 5vh; /*altura da div do input*/
-    /* background: salmon; cor da div de input */
-    margin: 3vh 0; /* alterado para unidades relativas */
+    width: 100%; 
+    height: 5vh; 
+    margin: 3vh 0;
 }
 
 .input-box input, .input-box textarea {
     overflow: hidden;
-    width: 100%; /*largura do input*/
-    height: 100%; /*altura do input*/
-    background: transparent; /*cor do input*/
-    border: none; /*remove as bordas do input*/
+    width: 100%; 
+    height: 100%; 
+    background: transparent; 
+    border: none; 
     outline: none;
     border: 2px solid rgba(255,255,255,.2);
     border-radius: 40px;
-    font-size: 1.6vh; /* alterado para unidades relativas */
+    font-size: 1.6vh; 
     color: #fff;
-    padding: 2vh 4vw 2vh 2vw; /* alterado para unidades relativas */
+    padding: 2vh 4vw 2vh 2vw;
 }
 
 .input-box textarea {
     height: 25vh;
-    border-radius: 2vh; /* alterado para unidades relativas */
+    border-radius: 2vh; 
     resize: none;
 }
 
 .input-box input::placeholder {
-    color: #fff; /*muda a cor do placeholder*/
+    color: #fff; 
 }
 
 .input-box textarea::placeholder {
-    color: #fff; /*muda a cor do placeholder*/
+    color: #fff;
 }
 
 .input-box i {
     position: absolute;
-    right: 2vw; /* alterado para unidades relativas */
+    right: 2vw; 
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2vh; /* alterado para unidades relativas */
+    font-size: 2vh; 
 }
 
 .box-btn {
     position: relative;
-    height: 24vh; /* alterado para unidades relativas */
-    /* border: 1px solid red; */
+    height: 24vh;
 }
 
 .btn {
@@ -91,21 +89,66 @@ body {
 
 .wrapper .btn {
     width: 100%;
-    height: 5vh; /* alterado para unidades relativas */
+    height: 5vh; 
     background: #fff;
     border: none;
     outline: none;
-    border-radius: 4vh; /* alterado para unidades relativas */
-    box-shadow: 0 0 1vh rgba(0, 0, 0, .1); /* alterado para unidades relativas */
+    border-radius: 4vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, .1); 
     cursor: pointer;
-    font-size: 1.6vh; /* alterado para unidades relativas */
+    font-size: 1.6vh;
     color: #333;
     font-weight: 600;
 }
 
-@keyframes move {
-    100% {
-        transform: translate3d(0, 0, 1px) rotate(360deg);
+.wrapper-success,
+.wrapper-fail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 65vh;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    -webkit-backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 20px;
+    padding: 3vh 4vw;
+}
+
+.container-success, 
+.container-fail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-success img, 
+.container-fail img {
+    margin-top: 0.5vh;
+    width: 50%;
+}
+
+.container-success, .text-notice 
+.container-fail, .text-notice {
+    padding-top: 1vh;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.success,
+.fail {
+    margin-top: 4vh;
+    animation: growth 1s ease-in-out forwards;
+}
+
+@keyframes growth {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
     }
 }
 
@@ -130,7 +173,6 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
 
 .background span:nth-child(0) {
     color: #ca2556;
